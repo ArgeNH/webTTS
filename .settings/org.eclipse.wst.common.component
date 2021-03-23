@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="ProyectoProga">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/" source-path="/resources"/>
+        <wb-resource deploy-path="/" source-path="/build"/>
+        <wb-resource deploy-path="/" source-path="/src/controller"/>
+        <wb-resource deploy-path="/" source-path="/resources/files"/>
+        <property name="context-root" value="ProyectoProga"/>
+        <property name="java-output-path" value="/ProyectoProga/build/classes"/>
+    </wb-module>
+</project-modules>

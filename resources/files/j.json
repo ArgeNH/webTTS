@@ -1,0 +1,210 @@
+[
+  {
+    "nameCompany":"Coflonorte",
+    "route": "Sogamoso-Nobsa",
+    "numberOfStops": 4,
+    "duration": "25 minutos",
+    "mileage": 6,
+    "cost": 2550.0
+  },
+  {
+    "nameCompany":"Cootrachica",
+    "route":"Sogamoso-Nobsa",
+    "numberOfStops" :10,
+    "duration" : "20 minutos",
+    "mileage":4,
+    "cost":2800.0
+  },
+  {
+    "nameCompany":"Cootracero",
+    "route":"Sogamoso-Nobsa",
+    "numberOfStops" :5,
+    "duration" : "20 minutos",
+    "mileage":9,
+    "cost":2350.0
+  },
+  {
+    "nameCompany":"Cootrachica",
+    "route": "Sogamoso-Duitama",
+    "numberOfStops": 7,
+    "duration": "50 minutos",
+    "mileage": 20,
+    "cost": 3000.0
+  },
+  {
+    "nameCompany":"Concorde",
+    "route":"Sogamoso-Duitama",
+    "numberOfStops" :3,
+    "duration" : "40 minutos",
+    "mileage":20,
+    "cost":3500.0
+  },
+  {
+    "nameCompany":"Coflonorte",
+    "route": "Sogamoso-Aquitania",
+    "numberOfStops": 5,
+    "duration": "51 minutos",
+    "mileage": 32,
+    "cost": 6500.0
+  },
+  {
+    "nameCompany":"Flota Sugamuxi",
+    "route": "Sogamoso-Aquitania",
+    "numberOfStops": 0,
+    "duration": "45 minutos",
+    "mileage": 32,
+    "cost": 7000.0
+  },
+  {
+    "nameCompany":"Cootracero",
+    "route": "Sogamoso-Pesca",
+    "numberOfStops": 7,
+    "duration": "37 minutos",
+    "mileage": 24,
+    "cost": 5000.0
+  },
+  {
+    "nameCompany":"Flota Sugamuxi",
+    "route": "Sogamoso-Pesca",
+    "numberOfStops": 7,
+    "duration": "30 minutos",
+    "mileage": 24,
+    "cost": 5500.0
+  },
+  {
+    "nameCompany":"Cootrachica",
+    "route": "Sogamoso-Tibasosa",
+    "numberOfStops": 2,
+    "duration": "20 minutos",
+    "mileage": 10,
+    "cost": 2350.0
+  },
+  {
+    "nameCompany":"Cootracero",
+    "route": "Sogamoso-Tibasosa",
+    "numberOfStops": 5,
+    "duration": "30 minutos",
+    "mileage": 13,
+    "cost": 2750.0
+  },
+  {
+    "nameCompany":"Cootrachica",
+    "route": "Sogamoso-Gameza",
+    "numberOfStops": 7,
+    "duration": "50 minutos",
+    "mileage": 21,
+    "cost": 3500.0
+  },
+  {
+    "nameCompany":"Flota Sugamuxi",
+    "route": "Sogamoso-Gameza",
+    "numberOfStops": 2,
+    "duration": "40 minutos",
+    "mileage": 20,
+    "cost": 4000.0
+  },
+    {
+    "nameCompany":"Copetran",
+    "route": "Sogamoso-Bogota",
+    "numberOfStops": 6,
+    "duration": "3h 28 minutos",
+    "mileage": 210,
+    "cost": 27000.0
+  },
+  {
+  "nameCompany":"Concorde",
+  "route": "Sogamoso-Bogota",
+  "numberOfStops": 2,
+  "duration": "3h",
+  "mileage": 210,
+  "cost": 30000.0
+  },
+  {
+  "nameCompany":"Coflonorte",
+  "route": "Sogamoso-Bogota",
+  "numberOfStops": 9,
+  "duration": "3h 40 minutos",
+  "mileage": 220,
+  "cost": 25000.0
+},
+  {
+    "nameCompany":"Cootracero",
+    "route": "Sogamoso-Tunja",
+    "numberOfStops": 3,
+    "duration": "1h 20 minutos",
+    "mileage": 70,
+    "cost": 7000.0
+  },
+  {
+    "nameCompany":"Coopetran",
+    "route": "Sogamoso-Tunja",
+    "numberOfStops": 5,
+    "duration": "1h 35 minutos",
+    "mileage": 70,
+    "cost": 6500.0
+  },
+  {
+     "nameCompany":"Copetran",
+    "route": "Sogamoso-Yopal",
+    "numberOfStops": 5,
+    "duration": "3h 50 minutos",
+    "mileage": 132,
+    "cost": 33000.0
+  },
+  {
+     "nameCompany":"Coflonorte",
+    "route": "Sogamoso-Yopal",
+    "numberOfStops": 2,
+    "duration": "3h 20 minutos",
+    "mileage": 132,
+    "cost": 36000.0
+  },
+  {
+     "nameCompany":"Concorde",
+    "route": "Sogamoso-Yopal",
+    "numberOfStops": 0,
+    "duration": "3h 10 minutos",
+    "mileage": 128,
+    "cost": 35000.0
+  },
+  {
+    "nameCompany":"Cootrachica",
+    "route": "Sogamoso-Paipa",
+    "numberOfStops": 7,
+    "duration": "40 minutos",
+    "mileage": 30,
+    "cost": 5000.0
+  },
+  {
+    "nameCompany":"Cootracero",
+    "route": "Sogamoso-Paipa",
+    "numberOfStops": 2,
+    "duration": "30 minutos",
+    "mileage": 30,
+    "cost": 5500.0
+  },
+  {
+    "nameCompany":"Concorde",
+    "route": "Sogamoso-Bucaramanga",
+    "numberOfStops": 4,
+    "duration": "7h 45 minutos",
+    "mileage": 334,
+    "cost": 50000.0
+  },
+  {
+    "nameCompany":"Copetran",
+    "route": "Sogamoso-Bucaramanga",
+    "numberOfStops": 2,
+    "duration": "7h 10 minutos",
+    "mileage": 329,
+    "cost": 52000.0
+  },
+  {
+    "nameCompany":"Coflonorte",
+    "route": "Sogamoso-Bucaramanga",
+    "numberOfStops": 7,
+    "duration": "8h",
+    "mileage": 340,
+    "cost": 48000.0
+  }
+]

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es/ES">
+<head>
+<meta charset="UTF-8">
+<title>TTS</title>
+
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="./css/bootstrap.css">
+<script src="./js/scripts.js"></script>
+</head>
+<body onload="loadRoutes()">
+
+	<!--Barra de navegaci�n-->
+	<nav class="navbar navbar-expand-lg navbar-dark  bg-info static-top ">
+		<div class="container">
+			<a class="navbar-brand" href="./index.html">Terminal de
+				Transporte de Sogamoso</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarResponsive" aria-controls="navbarResponsive"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item "><a class="nav-link" href="./routes.html">Rutas
+							<span class="sr-only">(current)</span>
+					</a></li>
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle" data-toggle="dropdown"
+						role="button" href="#">Empresas</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="./html/cootracero.html">Cootracero</a>
+							<a class="dropdown-item" href="./html/cootrachica.html">Cootrachica</a>
+							<a class="dropdown-item" href="./html/coflonorte.html">Cooflonorte</a>
+							<a class="dropdown-item" href="./html/copetran.html">Copetran</a> <a
+								class="dropdown-item" href="./html/flotaSugamuxi.html">Flota
+								Sugamuxi</a> <a class="dropdown-item" href="./html/cootransbol.html">Cootransbol</a>
+						</div></li>
+					<li class="nav-item"><a class="nav-link" href="#">Información</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!--Fin barra de navegaci�n-->
+
+
+	<div class="container-fluid">
+		<form class="was-validated">
+			<div class="jumbotron">
+				<h1 style="text-align: center; color: #0D47A1">
+					<i class="fas fa-bus"></i> &nbsp; Selección de ruta &nbsp; <i
+						class="fas fa-bus"></i>
+				</h1>
+			</div>
+			<div class="row alert alert-secondary">
+				<div class="col-sm">
+					<label for="origin" style="text-align: center"><strong>Origen</strong></label>
+					<select id="origin" class="custom-select" disabled>
+						<option value="0">Sogamoso</option>
+					</select>
+					<div class="invalid-feedback">No ha seleccionado un origen</div>
+				</div>
+				<div class="col-sm">
+
+
+					<label for="destination" style="text-align: center"><strong>Destino</strong></label>
+					<select id="destination" class="custom-select" required>
+						<option value="">Selecciona una ciudad de destino</option>
+						<!--<option value="0">Sogamoso</option>-->
+						<option value="0">Nobsa</option>
+						<option value="1">Duitama</option>
+						<option value="2">Sogamoso</option>
+						<option value="3">Aquitania</option>
+						<option value="4">pesca</option>
+						<option value="5">Tibasosa</option>
+						<option value="6">Bogota</option>
+						<option value="7">Tunja</option>
+						<option value="8">Paipa</option>
+						<option value="9">Yopal</option>
+						<option value="10">Gameza</option>
+						<option value="11">Bucaramanga</option>
+
+					</select>
+					<div class="invalid-feedback" id="out">No ha seleccionado un
+						destino</div>
+
+				</div>
+				<div class="col-sm-2">
+					<br>
+
+					<button type="button" class="btn btn-primary btn-lg active"
+						onclick="findRoute(); showDistance(); showCost(); showStops();">Consultar</button>
+
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<div class="container-fluid table-responsive">
+		<div class="row alert alert-secondary">
+			<div class="col-sm">
+
+				<table class="table table-striped ">
+					<thead class="thead-dark">
+						<tr>
+							<th style="text-align: center">Ruta</th>
+							<th style="text-align: center">Empresa</th>
+							<th style="text-align: center">Duración</th>
+							<th style="text-align: center">KM</th>
+							<th style="text-align: center">Numero de Paradas</th>
+							<th style="text-align: center">Valor Pasaje</th>
+						</tr>
+					</thead>
+					<tbody id="tabling"></tbody>
+				</table>
+				<div class="row">
+					<div class="col-sm-4 alert alert-warning">
+						<h5 style="text-align: center"><strong>Menor Recorrido</strong></h5>
+						<p id="outOne"></p>
+					</div>
+					<div class="col-sm-4 alert alert-warning">
+						<h5 style="text-align: center"><strong>Menos Paradas</strong></h5>
+						<p id="outThree"></p>
+					</div>
+					<div class="col-sm-4 alert alert-warning">
+						<h5 style="text-align: center"><strong>Valor de pasaje más bajo</strong></h5>
+						<p id="outTwo"></p>
+					</div>
+				</div>
+
+
+				<br>
+				<h1 style="text-align: center"><strong>Rutas Disponible</strong>s</h1>
+				<table class="table table-striped badge-light">
+					<thead>
+						<tr>
+							<th style="text-align: center">Ruta</th>
+							<th style="text-align: center">Empresa</th>
+							<th style="text-align: center">Duración</th>
+							<th style="text-align: center">KM</th>
+							<th style="text-align: center">Numero de Paradas</th>
+							<th style="text-align: center">Valor Pasaje</th>
+						</tr>
+					</thead>
+					<tbody id="table"></tbody>
+				</table>
+
+
+			</div>
+		</div>
+	</div>
+
+
+	<footer class="card-footer" style="align-content: center">
+
+		<a class="alert-link">&nbsp; Social Networks TTS</a>&nbsp; &nbsp;
+		&nbsp; &nbsp; &nbsp;
+		<!--GitHub Link-->
+		<a href="https://github.com/ArgeNH" class="alert-link"> GitHub <i
+			class="fab fa-github"></i></a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+		<!--Facebook Link-->
+		<a href="https://www.facebook.com/arge.nino" class="alert-link">
+			Facebook <i class="fab fa-facebook"></i>
+		</a>
+		<!--Twitter Link-->
+		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a
+			href="https://twitter.com/NinoArge" class="alert-link"> Twitter <i
+			class="fab fa-twitter"></i></a>
+		<!--Instagram Link-->
+		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a
+			href="https://www.instagram.com/arge_nino" class="alert-link">
+			Instagram <i class="fab fa-instagram"></i></i>
+		</a>
+	</footer>
+
+
+	<!--Frameworks-->
+	<script src="./js/Jquery.js"></script>
+	<script src="./js/popper.js"></script>
+	<script src="./js/bootstrap.js"></script>
+	<script src="./js/all.js"></script>
+
+</body>
+</html>
